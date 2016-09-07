@@ -1,0 +1,22 @@
+.card__column {
+  position: relative;
+  z-index: 1;
+
+  display: flex;
+  flex-grow: 1;
+
+  &_full_right {
+    margin-right: 10px;
+    flex-grow: 2;
+    padding: 0 15px;
+    border-right: 1px solid #666;
+  }
+
+  &_vertical {
+    flex-direction: column;
+  }
+
+  &_horizontal {
+    flex-direction: row;
+  }
+}

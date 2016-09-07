@@ -1,0 +1,14 @@
+.text {
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+  font-family: 'Roboto', calibri, sans-serif;
+  letter-spacing: 0.8px;
+  display: flex;
+  flex-grow: 1;
+  padding: 10px 0;
+
+  &_justified {
+    text-align: justify;
+  }
+}
