@@ -20,6 +20,6 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin("style.css")
     ],
-    watch: true,
-    devtool: 'cheap-module-eval-source-map'
+    // watch: true,
+    // devtool: 'cheap-module-eval-source-map'
 };

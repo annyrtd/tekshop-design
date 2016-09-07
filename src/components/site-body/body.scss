@@ -1,7 +1,13 @@
+@import "../../constants";
+
 .site__body {
   padding-top: 70px;
 
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media  all and (max-width: $mobile-one-column) {
+    padding: 0;
+  }
 }

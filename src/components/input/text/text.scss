@@ -1,0 +1,24 @@
+@import "../../../constants";
+
+.input-text {
+  padding: 4px;
+  width: 100%;
+
+  background-color: transparent;
+
+  border: solid 2px #F7F5F5;
+  outline: none;
+
+  font-weight: 400;
+  font-size: 14px;
+  color: white;
+  letter-spacing: 0.7px;
+  border-radius: 2px;
+
+  transition: all .3s ease-in;
+
+  &:focus {
+    border-color: transparent;
+    box-shadow: 0 0 2px 2px $yellow;
+  }
+}

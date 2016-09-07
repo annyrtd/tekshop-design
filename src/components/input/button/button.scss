@@ -1,0 +1,43 @@
+@import '../../../constants';
+
+.input-button {
+  padding: 5px 10px;
+
+  border: solid 1px #CBC9C5;
+  border-radius: 2px;
+
+  background-color: #CBC9C5;
+
+  box-shadow: 1px 1px 1px 0px #8D8B87;
+
+  font-weight: bold;
+  font-size: 19px;
+  color: #393832;
+
+  letter-spacing: 0.3px;
+  text-align: center;
+
+  outline: none;
+
+  transition: all 0.2s ease-in;
+
+  cursor: pointer;
+
+  z-index: 5;
+
+  &:hover {
+    background-color: $yellow;
+    border: solid 1px $yellow;
+    color: white;
+  }
+
+  &_login {
+    width: 100%;
+  }
+
+  &_logout {
+    height: 40px;
+    text-decoration: none;
+    margin-left: 5%;
+  }
+}

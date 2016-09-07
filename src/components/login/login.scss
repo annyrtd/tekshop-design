@@ -1,0 +1,14 @@
+@import '../../constants';
+
+.login {
+  width: 250px;
+  padding: 10px;
+
+  table {
+    width: 100%;
+  }
+
+  @media all and (max-width: $mobile-one-column) {
+    width: 100%;
+  }
+}
