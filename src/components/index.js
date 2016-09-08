@@ -6,7 +6,7 @@ import './header-w-logo';
 import './card'
 import './text';
 import './menu';
-import './login';
+import { inputValidation } from './login';
 import './input';
 import './simple-wrapper/simple-wrapper.scss';
 
@@ -21,6 +21,7 @@ const toggleShowMenu = () => {
 };
 
 export const init = () => {
+    inputValidation();
     siteElem.addEventListener('click', e => {
         if (e.target !== menuButtonElem)
             siteElem.classList.remove('site_translated_left')

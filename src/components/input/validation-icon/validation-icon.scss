@@ -1,0 +1,36 @@
+@import "../../../animations";
+
+.input-validation-icon {
+  visibility: visible !important;
+  padding-left: 10px;
+  display: inline-block;
+  margin-left: 3%;
+  width: 7%;
+  font-size: 0px;
+  height: 30px;
+  vertical-align: top;
+  background-size: contain;
+
+  &_required {
+    background: url(https://author.euro.confirmit.com/isa/BDJPFRDMEYBPBKLVADAYFQCDAVIOEQJR/tekshop%20panel%20demo/input-required-icon.png) 0 5px no-repeat;
+    background-size: contain;
+  }
+
+  &_invalid {
+    animation-name: invalidate;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0s;
+  }
+
+  &_valid {
+    animation-name: validate;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 0s;
+  }
+}

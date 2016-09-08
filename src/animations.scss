@@ -7,3 +7,53 @@
     opacity: 1;
   }
 }
+
+@keyframes invalidate {
+   10% {
+     background-position-y: 10px;
+   }
+
+   50% {
+     background-position-y: -50px;
+   }
+
+   70% {
+     background-position-y: -50px;
+     background-image: url(https://author.euro.confirmit.com/isa/BDJPFRDMEYBPBKLVADAYFQCDAVIOEQJR/tekshop%20panel%20demo/input-invalid-icon.png);
+   }
+
+   85% {
+     background-position-y: 10px;
+     background-image: url(https://author.euro.confirmit.com/isa/BDJPFRDMEYBPBKLVADAYFQCDAVIOEQJR/tekshop%20panel%20demo/input-invalid-icon.png);
+   }
+
+   100% {
+     background-position-y: 5px;
+     background-image: url(https://author.euro.confirmit.com/isa/BDJPFRDMEYBPBKLVADAYFQCDAVIOEQJR/tekshop%20panel%20demo/input-invalid-icon.png);
+   }
+ }
+
+@keyframes validate {
+  10% {
+    background-position-y: 10px;
+  }
+
+  50% {
+    background-position-y: -50px;
+  }
+
+  70% {
+    background-position-y: -50px;
+    background-image: url(https://author.euro.confirmit.com/isa/BDJPFRDMEYBPBKLVADAYFQCDAVIOEQJR/tekshop%20panel%20demo/valid-invalid-icon.png);
+  }
+
+  85% {
+    background-position-y: 10px;
+    background-image: url(https://author.euro.confirmit.com/isa/BDJPFRDMEYBPBKLVADAYFQCDAVIOEQJR/tekshop%20panel%20demo/valid-invalid-icon.png);
+  }
+
+  100% {
+    background-position-y: 5px;
+    background-image: url(https://author.euro.confirmit.com/isa/BDJPFRDMEYBPBKLVADAYFQCDAVIOEQJR/tekshop%20panel%20demo/valid-invalid-icon.png);
+  }
+}
