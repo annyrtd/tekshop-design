@@ -13,3 +13,6 @@
   @include fadeInAnimation(1s, 1.2s);
   @include transparentBgBlock(#403F3B, .35);
 }
+
+@import "./logo/logo";
+@import "./menu-button/menu-button";

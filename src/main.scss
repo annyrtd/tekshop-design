@@ -16,3 +16,49 @@ body {
 .display-none {
   display: none;
 }
+
+.site {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+
+  position: absolute;
+  z-index: 1;
+
+  transform: translate(0px);
+  transition: transform 400ms ease;
+
+  background-image: url('https://survey.euro.confirmit.com/isa/BDJPFRDMEYBPBKLVADAYFQCDAVIOEQJR/Suths/shop_tech2.jpg');
+  background-size: cover;
+
+  &_translated_left {
+    transform: translateX(370px);
+
+    @media all and (max-width: 769px){
+      transform: translateX(349px);
+    }
+
+    @media all and (max-width: 400px){
+      transform: translateX(229px);
+    }
+  }
+}
+
+@import "./animations";
+@import "./constants";
+@import "./mixins";
+
+@import "./components/card/card";
+@import "./components/header/header";
+@import "./components/input/button/button";
+@import "./components/input/label/label";
+@import "./components/input/text/text";
+@import "./components/input/validation-icon/validation-icon";
+@import "./components/link/link";
+@import "./components/login/login";
+@import "./components/menu/menu";
+@import "./components/panel/panel";
+@import "./components/simple-wrapper/simple-wrapper";
+@import "./components/site-body/body";
+@import "./components/text/text";

@@ -1,9 +1,3 @@
-import './login.scss';
-import './instruction-text/instruction-text.scss';
-import './cred-label/cred-label.scss';
-import './error-message/error-message.scss';
-import './remember-me/remember-me.scss';
-
 const onShow = el => {
     if (el.value) {
         el.classList.add('input-text_valid');

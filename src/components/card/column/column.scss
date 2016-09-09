@@ -7,6 +7,9 @@
   display: flex;
   flex-grow: 1;
 
+  flex-wrap: wrap;
+  flex-direction: column;
+
   padding: 0 15px;
 
   &_full_right {
@@ -35,6 +38,4 @@
       order: 2;
     }
   }
-
-
 }

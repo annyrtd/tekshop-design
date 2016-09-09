@@ -1,17 +1,4 @@
-import './site.scss';
-import './link/link.scss';
-
-import './panel';
-import './site-body';
-import './header';
-import './card'
-import './text';
-
-import './menu';
 import { inputValidation } from './login';
-import './input';
-import './simple-wrapper/simple-wrapper.scss';
-
 import { menuButton } from './panel/menu-button';
 
 const menuButtonElem = document.querySelector('.panel__menu-button');
@@ -21,8 +8,21 @@ const toggleShowMenu = () => {
     siteElem.classList.toggle('site_translated_left');
 };
 
+const responsiveIframe = () => {
+    window.addEventListener('message', e => {
+        const [eventName, data] = e.data;
+        switch(eventName) {
+            case 'setHeight':
+                document.querySelector(".iframe_responsive").style.height = `${data + 10}px`;
+                break;
+        }
+    }, false);
+}
+
+
 export const init = () => {
     inputValidation();
+    responsiveIframe();
     siteElem.addEventListener('click', e => {
         if (e.target !== menuButtonElem)
             siteElem.classList.remove('site_translated_left')

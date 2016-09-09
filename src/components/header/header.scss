@@ -9,6 +9,8 @@
 
   font-weight: bold;
 
+  max-height: 70px;
+
   &_main {
     font-size: 22px;
     color: $blue;
@@ -29,3 +31,4 @@
   }
 }
 
+@import "./logo/logo";
