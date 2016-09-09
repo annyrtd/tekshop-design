@@ -1,15 +1,16 @@
 import './site.scss';
+import './link/link.scss';
 
 import './panel';
 import './site-body';
-import './header-w-logo';
+import './header';
 import './card'
 import './text';
+
 import './menu';
 import { inputValidation } from './login';
 import './input';
 import './simple-wrapper/simple-wrapper.scss';
-
 
 import { menuButton } from './panel/menu-button';
 

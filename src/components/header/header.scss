@@ -1,0 +1,31 @@
+@import "../../constants";
+
+.header {
+  padding: 15px 0 5px;
+
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+
+  font-weight: bold;
+
+  &_main {
+    font-size: 22px;
+    color: $blue;
+
+  }
+
+  &_has_logo {
+    height: 70px;
+  }
+
+  &_level_1 {
+    padding-top: 20px;
+
+    font-size: 18px;
+    color: $yellow;
+
+    letter-spacing: 0.3px;
+  }
+}
+
