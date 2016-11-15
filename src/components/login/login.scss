@@ -1,16 +1,16 @@
-@import '../../constants';
+@import '../../settings/settings';
+@import "../../generic/typography";
 
-.login {
-  width: 250px;
-  padding: 10px;
+.c_login {
+  width: 15 * $base-font-size;
 
   tr {
-    padding-bottom: 5px;
+    padding-bottom: $ms-3;
   }
 
   table {
     width: 100%;
-    max-width: 300px;
+    max-width: 15 * $base-font-size;
   }
 
   @media all and (max-width: $mobile-one-column) {
@@ -18,7 +18,5 @@
   }
 }
 
-@import "./cred-label/cred-label";
-@import "./error-message/error-message";
-@import "./instruction-text/instruction-text";
-@import "./remember-me/remember-me";
+@import "error-message";
+@import "instruction-text";

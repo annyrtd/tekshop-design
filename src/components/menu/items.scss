@@ -1,0 +1,11 @@
+@import "../../generic/typography";
+
+.c_menu__items {
+  padding: 0 $ms-1;
+  margin: $ms0 0;
+
+  list-style-type: none;
+  line-height: $ms1;
+  font-size: $ms0;
+  font-weight: 400;
+}

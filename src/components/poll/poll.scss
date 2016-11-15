@@ -1,0 +1,40 @@
+@import "single/single";
+@import "../../generic/typography";
+@import "../../settings/settings";
+
+.c_poll {
+
+  &__question-text {
+    color: $menu__item__font-color;
+    font-size: $ms1;
+    padding-top: $ms-2;
+  }
+
+  fieldset {
+    padding: 0;
+    border: none;
+    margin: $ms-1 0;
+
+    &>table {
+      width: 100%;
+    }
+  }
+
+  &__input {
+    width: 2 * $base-font-size;
+  }
+
+  &__answerlabel {
+    font-size: $ms1;
+    color: $menu__item__font-color;
+
+    &:hover {
+      color: darken($menu__item__font-color, 20%);
+
+
+      label {
+        cursor: pointer;
+      }
+    }
+  }
+}

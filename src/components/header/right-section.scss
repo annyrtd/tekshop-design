@@ -1,0 +1,10 @@
+@import "../../settings/breakpoints";
+
+.c_header__right-section {
+  max-width: 400px;
+  flex-grow: 1;
+
+  @media screen and (max-width: $mobile) {
+    justify-content: center;
+  }
+}

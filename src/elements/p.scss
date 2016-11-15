@@ -1,0 +1,21 @@
+@import "../generic/typography";
+
+.e_p{
+  font-weight: 400;
+  font-size: $base-font-size;
+  line-height: $ms1;
+  padding: $ms-1 0;
+  color: #FFFFFF;
+
+  display: flex;
+  flex-grow: 2;
+  flex-wrap: wrap;
+
+  &_justified {
+    text-align: justify;
+  }
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}

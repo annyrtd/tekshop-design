@@ -1,34 +1,15 @@
-@import "../../constants";
+@import "../../tools/mixins";
+@import "../../generic/typography";
 
-.header {
-  padding: 15px 0 5px;
+.c_header {
+  height: 5 * $base-font-size;
 
-  display: flex;
-  align-items: center;
-  flex-grow: 1;
+  box-shadow: 1px 1px 8px 0 #31302a;
 
-  font-weight: bold;
-
-  max-height: 70px;
-
-  &_main {
-    font-size: 22px;
-    color: $blue;
-
-  }
-
-  &_has_logo {
-    height: 70px;
-  }
-
-  &_level_1 {
-    padding-top: 20px;
-
-    font-size: 18px;
-    color: $yellow;
-
-    letter-spacing: 0.3px;
-  }
+  /*@include fadeInAnimation(1s, 1.2s);*/
+  @include transparentBgBlock(#403F3B, .35);
 }
 
-@import "./logo/logo";
+@import "menu-button/menu-button";
+@import "right-section";
+@import "logo";

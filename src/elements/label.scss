@@ -1,0 +1,11 @@
+@import "../generic/typography";
+@import "../settings/settings";
+
+.e_label {
+  padding: $ms-3 0;
+
+  font-weight: 400;
+  font-size: $ms1;
+  color: $menu__item__font-color;
+  text-decoration: underline;
+}

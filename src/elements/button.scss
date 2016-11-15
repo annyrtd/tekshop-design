@@ -1,0 +1,32 @@
+@import '../settings/settings';
+@import '../generic/typography';
+
+.e_button {
+  padding: (0.2 * $base-font-size)  $ms-1;
+
+  border: solid 1px $btn__border-color;
+  border-radius: 2px;
+
+  background-color: $btn__color;
+
+  box-shadow: 1px 1px 1px 0 #8D8B87;
+
+  font-weight: bold;
+  font-size: $btn-font-base-size;
+  color: $btn__font-color;
+
+  outline: none;
+
+  transition: all 0.2s ease-in;
+
+  cursor: pointer;
+
+  z-index: 5;
+  text-decoration: none;
+
+  &:hover {
+    background-color: $btn--hover__color;
+    border: solid 1px $btn--hover__border-color;
+    color: $btn--hover__font-color;
+  }
+}

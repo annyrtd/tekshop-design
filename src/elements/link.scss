@@ -1,0 +1,32 @@
+@import "../settings/settings";
+
+.e_link {
+  width: 100%;
+
+  padding: 15px 0 5px;
+
+  & a {
+
+    text-decoration: underline;
+    color: darken($yellow, 15%);
+
+    transition: color 0.3s ease-in;
+
+    &:hover {
+
+      color: $yellow;
+    }
+  }
+}
+a.e_link {
+  width: auto;
+  padding: 0;
+  color: darken($yellow, 15%);
+
+  transition: color 0.3s ease-in;
+
+  &:hover {
+
+    color: $yellow;
+  }
+}

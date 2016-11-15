@@ -1,0 +1,14 @@
+@import "../../generic/typography";
+@import "../../settings/settings";
+
+.c_login__error-message {
+  padding: $ms-3 $ms-2;
+  background-color: $error__color;
+  color: $error__font-color;
+  border: 2px solid $error__border-color;
+  border-radius: $ms-3;
+
+  &_small {
+    max-width: 15 * $base-font-size;
+  }
+}

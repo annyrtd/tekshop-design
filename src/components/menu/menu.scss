@@ -1,6 +1,6 @@
-@import "../../mixins";
+@import "../../tools/mixins";
 
-.menu {
+.c_menu {
   width: 370px;
   min-height: 100vh;
 
@@ -9,7 +9,7 @@
 
   background-color: #222222;
 
-  @include fadeInAnimation(1s, 1.5s);
+  /*@include fadeInAnimation(1s, 1.5s);*/
 
   @media all and (max-width: 769px){
     width: 350px;
@@ -20,6 +20,6 @@
   }
  }
 
-@import "./item/item";
-@import "./items/items";
-@import "./title/title";
+@import "item";
+@import "items";
+@import "title";

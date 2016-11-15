@@ -1,0 +1,45 @@
+@import "../generic/typography";
+@import "../settings/settings";
+
+.t_display-none {
+  display: none;
+}
+
+.t_flex-align-center {
+  align-items: center;
+}
+
+.t_flex-justify-sb {
+  justify-content: space-between;
+}
+
+.t_flex-justify-sa {
+  justify-content: space-around;
+}
+.t_flex-justify-c {
+  justify-content: center;
+}
+
+.t_text-align-center {
+  text-align: center;
+}
+
+.t_padding-left {
+  padding-left: $ms1;
+
+  @media screen and (max-width: $tablet) {
+    padding-left: 0;
+  }
+}
+
+.t_padding-right {
+  padding-right: $ms1;
+
+  @media screen and (max-width: $tablet) {
+    padding-right: 0;
+  }
+}
+
+.t_bottom-margin {
+  margin-bottom: $ms1;
+}

@@ -1,0 +1,26 @@
+@import '../../node_modules/modularscale-sass/stylesheets/_modular-scale';
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$font-family: 'Roboto', Arial, sans-serif;
+
+/*
+ * Fonts use Modular scale from http://www.modularscale.com/
+ *
+ */
+
+$base-font-size: 1em;
+
+$ms-base: $base-font-size;
+$ms-ratio: 1.25;
+
+/* Header level sizes */
+$ms3: ms(3);
+$ms2: ms(2);
+$ms1: ms(1);
+$ms0: $base-font-size;
+$ms-1: ms(-1);
+$ms-2: ms(-2);
+$ms-3: ms(-3);
+
+/* Form elements' sizes */
+$btn-font-base-size: ms(1);

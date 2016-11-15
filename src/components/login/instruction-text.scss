@@ -1,0 +1,11 @@
+@import "../../settings/settings";
+@import "../../generic/typography";
+
+.c_login__instruction-text {
+  padding: $ms-3 0;
+
+  color: $btn__color;
+  font-style: italic;
+
+  font-size: $ms-2;
+}

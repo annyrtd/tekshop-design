@@ -1,0 +1,13 @@
+@import "../generic/typography";
+@import "../settings/breakpoints";
+
+$padding: 5 * $base-font-size;;
+
+.c_main {
+  padding-top: $padding;
+  padding-bottom: $padding;
+
+  @media screen and (max-width: $tablet) {
+    padding-top: 0;
+  }
+}

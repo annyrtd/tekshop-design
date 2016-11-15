@@ -1,0 +1,42 @@
+@import "../generic/typography";
+@import "../tools/tools";
+
+.o_full-width {
+  width: 100%;
+  position: relative;
+
+  z-index: 1;
+}
+
+.o_flex--col {
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  min-width: 15em;
+  position: relative;
+}
+
+.o_flex--row {
+  display: flex;
+  flex-direction: row;
+  z-index: 1;
+  position: relative;
+}
+
+.o_content {
+  max-width: 65 * $base-font-size;
+  min-width: 60%;
+  min-height: 20 * $base-font-size;
+  padding: $ms0 $ms1;
+
+  @include transparentBgBlock(#403F3B, .6);
+
+  &:after {
+    border-radius: 5px;
+  }
+
+  @media screen and (max-width: $tablet) {
+    flex-direction: column-reverse;
+  }
+}
+

@@ -1,0 +1,15 @@
+.c_header__menu-button {
+  margin-left: 5%;
+
+  z-index: 1;
+  position: relative;
+
+  transform: rotate(0deg);
+  transition: .6s;
+
+  cursor: pointer;
+
+  &_rotate_clockwise {
+    transform: rotate(180deg);
+  }
+}

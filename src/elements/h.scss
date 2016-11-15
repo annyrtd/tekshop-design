@@ -1,0 +1,21 @@
+@import "../settings/settings";
+@import "../generic/typography";
+
+.e_h {
+  display: inline-block;
+
+  padding: 0;
+  margin: 0;
+
+  font-weight: bold;
+
+  &--h1 {
+    font-size: $ms3;
+    color: $h1__color;
+  }
+
+  &--h2 {
+    font-size: $ms2;
+    color: $h2__color;
+  }
+}

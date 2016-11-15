@@ -1,0 +1,9 @@
+@import "../generic/typography";
+
+.e_icon {
+  max-height: 4 * $base-font-size;
+
+  &--space-right {
+    margin-right: $ms1;
+  }
+}

@@ -1,11 +1,12 @@
 import { inputValidation } from './login';
-import { menuButton } from './panel/menu-button';
+import { menuButton } from './header/menu-button';
 
-const menuButtonElem = document.querySelector('.panel__menu-button');
-const siteElem = document.querySelector('.site');
+const menuButtonElem = document.querySelector('.c_header__menu-button');
+const panelBodyEl = document.querySelector('.c_panel-body');
+const menuEl = document.querySelector('.c_menu');
 
 const toggleShowMenu = () => {
-    siteElem.classList.toggle('site_translated_left');
+    menuEl.classList.toggle('c_menu--open');
 };
 
 const responsiveIframe = () => {
@@ -17,15 +18,15 @@ const responsiveIframe = () => {
                 break;
         }
     }, false);
-}
+};
 
 
 export const init = () => {
     inputValidation();
     responsiveIframe();
-    siteElem.addEventListener('click', e => {
+    panelBodyEl.addEventListener('click', e => {
         if (e.target !== menuButtonElem)
-            siteElem.classList.remove('site_translated_left')
+            menuEl.classList.remove('c_menu--open')
     });
     menuButton.init(menuButtonElem, 'click', toggleShowMenu);
 };
