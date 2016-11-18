@@ -16,7 +16,7 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.js$/, exclude: /node_modules/, loader: 'babel', query: { presets: ['es2015'] } },,
+            { test: /\.js$/, exclude: /node_modules/, loader: 'babel', query: { presets: ['es2015'] } },
             { test: /\.s?css$/, loader: ExtractTextPlugin.extract('style-loader', ['css-loader', 'postcss-loader', 'sass-loader']) }
         ]
 
@@ -27,6 +27,6 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin("style.css")
     ],
-    watch: true,
-    devtool: 'cheap-module-eval-source-map'
+    // watch: true,
+    // devtool: 'cheap-module-eval-source-map'
 };

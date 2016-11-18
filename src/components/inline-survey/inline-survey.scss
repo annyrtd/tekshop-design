@@ -1,0 +1,56 @@
+.c_inline-survey {
+  background-color: transparent;
+  margin:0;
+  padding:0;
+  opacity: 1 !important;
+
+  .powered {
+    display: none;
+  }
+
+  .questionarea {
+    margin: 0 !important;
+  }
+
+  fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  table {
+    border-collapse: collapse;
+    margin: 0 !important;
+  }
+
+  td {
+    padding: 1em 0;
+    text-align: center;
+  }
+
+  input.confirmit-nav {
+    width: 100%;
+    max-width: 255px;
+  }
+
+  input.input-text {
+    width: 98%;
+  }
+
+  .confirmit-loader {
+    display: none !important;
+    opacity: 0;
+  }
+
+  .c_login__error-message {
+    max-width: 255px;
+  }
+
+
+}
+
+@import "./question-area/question-area"

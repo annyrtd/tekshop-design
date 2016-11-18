@@ -8,25 +8,25 @@
   & a {
 
     text-decoration: underline;
-    color: darken($yellow, 15%);
+    color: darken($yellow, 5%);
 
     transition: color 0.3s ease-in;
 
     &:hover {
 
-      color: $yellow;
+      color: lighten($yellow, 5%);
     }
   }
 }
 a.e_link {
   width: auto;
   padding: 0;
-  color: darken($yellow, 15%);
+  color: darken($yellow, 5%);
 
   transition: color 0.3s ease-in;
 
   &:hover {
 
-    color: $yellow;
+    color: lighten($yellow, 5%);
   }
 }

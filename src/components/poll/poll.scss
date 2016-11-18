@@ -1,8 +1,10 @@
 @import "single/single";
+@import "chart/chart";
 @import "../../generic/typography";
 @import "../../settings/settings";
 
 .c_poll {
+  opacity: 1 !important;
 
   &__question-text {
     color: $menu__item__font-color;

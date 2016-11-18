@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+.t_flex-justify-start {
+  justify-content: flex-start;
+}
+
 .t_flex-justify-sb {
   justify-content: space-between;
 }
@@ -22,6 +26,11 @@
 
 .t_text-align-center {
   text-align: center;
+}
+
+.t_fixed-overlay {
+  z-index: 9999;
+  position: fixed;
 }
 
 .t_padding-left {

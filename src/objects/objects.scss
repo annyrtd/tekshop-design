@@ -24,17 +24,29 @@
 }
 
 .o_content {
-  max-width: 65 * $base-font-size;
+  max-width: 60 * $base-font-size;
   min-width: 60%;
   min-height: 20 * $base-font-size;
   padding: $ms0 $ms1;
 
   @include transparentBgBlock(#403F3B, .6);
 
+  @media screen and (max-width: $tablet) {
+    flex-direction: column;
+  }
+
   &:after {
     border-radius: 5px;
   }
 
+  &--space-left {
+    @media screen and (max-width: $tablet) {
+      margin-left: 40px;
+    }
+  }
+}
+
+.o_content--reverse {
   @media screen and (max-width: $tablet) {
     flex-direction: column-reverse;
   }

@@ -30,7 +30,16 @@ iframe {
   position: relative;
 }
 
-/*#confirmit-loader {
 
+#confirmit-loader {
   display: none !important;
-}*/
+  opacity: 0;
+}
+
+.confirmit-inline > div {
+  opacity: 0;
+}
+
+.confirmit {
+  display: none;
+}

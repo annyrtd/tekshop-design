@@ -1,0 +1,41 @@
+@import "../../../generic/typography";
+@import "../../../settings/color_scheme";
+
+$bar-color: darken($blue, 5%);
+
+.c_chart {
+  padding: $ms-3 0;
+
+  .c_chart__label {
+    padding-top: $ms-2;
+    padding-bottom: $ms-3;
+
+    label {
+      color: $bar-color;
+      font-size: $ms0;
+    }
+  }
+
+  .c_chart__label:first-child {
+    padding-top: 0;
+  }
+
+  .c_chart__bar-bg {
+    border: 1px solid #eee;
+  }
+
+  .c_chart__bar-progress {
+    background-color: $bar-color;
+  }
+
+  .c_chart__bar-bg, .c_chart__bar-progress {
+
+  }
+
+  .c_chart__total {
+    padding-top: $ms-2;
+    color: $bar-color;
+    font-size: $ms1;
+    font-weight: bold;
+  }
+}
