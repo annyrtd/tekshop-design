@@ -3,12 +3,13 @@
   margin:0;
   padding:0;
   opacity: 1 !important;
+  overflow-y: hidden;
 
   .powered {
     display: none;
   }
 
-  .questionarea {
+  .questionarea, textarea {
     margin: 0 !important;
   }
 
@@ -50,7 +51,10 @@
     max-width: 255px;
   }
 
+  textarea {
+    width: 98%;
+  }
 
 }
 
-@import "./question-area/question-area"
+@import "./question-area/question-area";

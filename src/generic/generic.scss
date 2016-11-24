@@ -21,9 +21,10 @@ body {
   overflow-x: hidden;
 }
 
-
 iframe {
   border: none;
+  overflow: hidden;
+  padding-top: $ms1;
 }
 
 .confirmit-inline {
@@ -38,6 +39,10 @@ iframe {
 
 .confirmit-inline > div {
   opacity: 0;
+}
+
+.body {
+  opacity: 1 !important;
 }
 
 .confirmit {
