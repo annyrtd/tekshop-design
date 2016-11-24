@@ -1,0 +1,68 @@
+@import '../../generic/generic';
+@import "../../settings/settings";
+
+.c_redeem-for-btn {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  padding: 0.5em;
+
+  * {
+    display: flex;
+  }
+
+  &__image {
+
+
+  }
+
+  &--selected {
+    box-shadow: inset 0 0 5px 2px #f0a62f;
+    border-radius: 5px;
+
+    .c_redeem-for-btn__caption__text {
+      color: darken($blue, 30%);
+    }
+  }
+
+  &__preview {
+    opacity: 0;
+    position: absolute;
+    top: -120px;
+    width: 280px;
+    pointer-events: none;
+
+    &--left {
+      left: -280px;
+    }
+
+    &--right {
+      left: 280px;
+    }
+  }
+
+  &__caption {
+    flex-grow: 2;
+    align-items: center;
+    background-color: $yellow;
+    justify-content: center;
+
+    &__text {
+      color: #fff;
+      font-size: $ms1;
+      width: 120px;
+    }
+  }
+}
+
+.c_redeem-for-btn__image:hover + .c_redeem-for-btn__preview {
+  opacity: 1;
+  z-index: 9;
+}
+
+@media screen and (max-width: $tablet) {
+  .c_redeem-for-btn__preview {
+    display: none;
+  }
+}

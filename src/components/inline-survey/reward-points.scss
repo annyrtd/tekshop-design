@@ -1,0 +1,25 @@
+@import '../../settings/settings';
+@import "../../generic/generic";
+
+.c_reward-points {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  flex-grow: 1;
+  padding: 1em 0;
+
+  &__header {
+    color: $blue;
+    font-size: $ms1;
+  }
+
+  &__amount {
+    color: $yellow;
+    font-size: 3 * $ms1;
+  }
+
+  &__header, &__amount {
+    line-height: 100%;
+    text-align: left;
+  }
+}

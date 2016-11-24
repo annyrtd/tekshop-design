@@ -11,6 +11,7 @@
 
   .questionarea, textarea {
     margin: 0 !important;
+    min-width: 50% !important;
   }
 
   fieldset {
@@ -57,4 +58,12 @@
 
 }
 
-@import "./question-area/question-area";
+#fieldset_Rewards {
+  input[type=radio] {
+    display: none;
+  }
+}
+
+@import "question-area";
+@import "reward-points";
+@import "redeem-for-answer-button";

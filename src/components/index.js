@@ -1,5 +1,6 @@
 import { inputValidation } from './login';
 import { menuButton } from './header/menu-button';
+import initRedeemSelection from './inline-survey';
 
 const menuButtonElem = document.querySelector('.c_header__menu-button');
 const panelBodyEl = document.querySelector('.c_panel-body');
@@ -24,6 +25,7 @@ const responsiveIframe = () => {
 export const init = () => {
     inputValidation();
     responsiveIframe();
+    initRedeemSelection();
     panelBodyEl.addEventListener('click', e => {
         if (e.target !== menuButtonElem)
             menuEl.classList.remove('c_menu--open')

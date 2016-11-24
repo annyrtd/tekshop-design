@@ -21,6 +21,12 @@
   flex-direction: row;
   z-index: 1;
   position: relative;
+
+  &--to-col {
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
 }
 
 .o_content {
