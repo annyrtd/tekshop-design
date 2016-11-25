@@ -49,10 +49,3 @@ iframe {
 .confirmit {
   display: none;
 }
-
-@media screen and (max-width: $tablet) {
-  fieldset>table>tbody>tr>td {
-    display: table-row;
-  }
-}
-

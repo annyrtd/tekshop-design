@@ -14,6 +14,29 @@
   z-index: 1;
   min-width: 15em;
   position: relative;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: wrap;
+
+  &--2 {
+    max-width: 50%;
+  }
+
+  @media screen and (max-width: $small-tablet) {
+    max-width: 100%;
+  }
+}
+
+.o_spacer {
+  display: flex;
+
+  &--horizontal {
+    height: $ms1;
+
+    &--2x {
+      height: $ms2;
+    }
+  }
 }
 
 .o_flex--row {
@@ -22,9 +45,11 @@
   z-index: 1;
   position: relative;
 
+
   &--to-col {
-    @media screen and (max-width: $mobile) {
+    @media screen and (max-width: $small-tablet) {
       flex-direction: column;
+      flex-wrap: wrap;
     }
   }
 }

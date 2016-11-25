@@ -1,0 +1,36 @@
+@import "../settings/settings";
+
+.e_table {
+  border: 1px solid $btn__color;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  th {
+    color: $yellow;
+    font-size: $ms1;
+    padding: $ms-2;
+  }
+
+  td {
+    color: #fff;
+    font-size: $ms0;
+    padding: $ms-3;
+  }
+
+  text-align: center;
+}
+
+.o_flex--col--2 table {
+  width: 95%;
+}
+
+@media screen and (max-width: $small-tablet) {
+  fieldset>table>tbody>tr>td {
+    display: table-row;
+  }
+}
+
+@media screen and (max-width: $small-tablet) {
+  .o_flex--col--2 table {
+    width: 100%;
+  }
+}

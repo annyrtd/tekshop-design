@@ -2,7 +2,7 @@
 @import "../../generic/typography";
 
 .c_header {
-  height: 5 * $base-font-size;
+  min-height: 5 * $base-font-size;
 
   box-shadow: 1px 1px 8px 0 #31302a;
 
