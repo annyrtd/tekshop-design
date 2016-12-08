@@ -49,3 +49,19 @@ iframe {
 .confirmit {
   display: none;
 }
+
+.rewards iframe {
+  width: 100%;
+  height: 1100px !important;
+}
+
+.invite-a-friend iframe {
+  width: 100%;
+  height: 450px !important;
+}
+
+@media screen and (max-width: 590px) {
+  .rewards iframe {
+    height: 1980px !important;
+  }
+}
