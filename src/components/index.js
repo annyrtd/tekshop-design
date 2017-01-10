@@ -10,21 +10,21 @@ const toggleShowMenu = () => {
     menuEl.classList.toggle('c_menu--open');
 };
 
-const responsiveIframe = () => {
-    window.addEventListener('message', e => {
-        const [eventName, data] = e.data;
-        switch(eventName) {
-            case 'setHeight':
-                document.querySelector(".iframe_responsive").style.height = `${data + 10}px`;
-                break;
-        }
-    }, false);
-};
+// const responsiveIframe = () => {
+//     window.addEventListener('message', e => {
+//         const [eventName, data] = e.data;
+//         switch(eventName) {
+//             case 'setHeight':
+//                 document.querySelector(".iframe_responsive").style.height = `${data + 10}px`;
+//                 break;
+//         }
+//     }, false);
+// };
 
 
 export const init = () => {
     inputValidation();
-    responsiveIframe();
+    //responsiveIframe();
     initRedeemSelection();
     panelBodyEl.addEventListener('click', e => {
         if (e.target !== menuButtonElem)

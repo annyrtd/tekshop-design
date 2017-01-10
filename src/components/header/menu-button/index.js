@@ -5,7 +5,6 @@ const rotate = _ => {
 };
 
 export const menuButton = {
-    initDelayed: () => {},
     init: (_, evt, cb)=> {
         if (_) {
           rotate(_);

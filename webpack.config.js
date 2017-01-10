@@ -11,9 +11,6 @@ module.exports = {
         path: './dist/',
         filename: 'bundle.js'
     },
-    devServer: {
-        contentBase: './dist/'
-    },
     module: {
         loaders: [
             { test: /\.js$/, exclude: /node_modules/, loader: 'babel', query: { presets: ['es2015'] } },
@@ -27,6 +24,4 @@ module.exports = {
     plugins: [
         new ExtractTextPlugin("style.css")
     ],
-    // watch: true,
-    // devtool: 'cheap-module-eval-source-map'
 };

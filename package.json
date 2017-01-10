@@ -4,7 +4,8 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node_modules/.bin/webpack",
+    "dev": "node_modules/.bin/webpack --watch --devtool 'cheap-module-eval-source-map'"
   },
   "keywords": [],
   "author": "",

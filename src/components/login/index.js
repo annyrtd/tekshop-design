@@ -6,7 +6,7 @@ const onShow = el => {
 };
 
 const onFocus = e => {
-    e.target.classList.remove('input-text_invalid', 'input-text_invalid');
+    e.target.classList.remove('input-text_invalid', 'input-text_valid');
     e.target.nextSibling.classList.remove('input-validation-icon_invalid', 'input-validation-icon_valid');
 };
 
