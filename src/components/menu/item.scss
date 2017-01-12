@@ -9,6 +9,7 @@
   text-decoration: none;
 
   display: inline-block;
+  outline: none;
 
   &:hover{
     background-color: $menu__item--hover__color;
@@ -16,5 +17,4 @@
     filter: alpha(opacity=90);
     cursor: pointer;
   }
-
 }

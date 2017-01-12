@@ -65,3 +65,17 @@ iframe {
     height: 1980px !important;
   }
 }
+
+div.css-menu > div.yui3-menu-content > ul {
+  padding: 0 $ms-1;
+  margin: $ms0 0;
+
+  list-style-type: none;
+  line-height: $ms1;
+  font-size: $ms0;
+  font-weight: 400;
+}
+
+.yui3-menu-horizontal li {
+  float: none !important;
+}

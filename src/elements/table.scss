@@ -1,22 +1,46 @@
 @import "../settings/settings";
 
 .e_table {
-  border: 1px solid $btn__color;
   background-color: rgba(0, 0, 0, 0.3);
 
-  th {
-    color: $yellow;
-    font-size: $ms1;
-    padding: $ms-2;
+  th, td {
+    border: 1px solid $btn__color;
+    padding: $ms-4;
   }
 
-  td {
+  .header {
+    font-weight: bold;
+  }
+
+  .datacell {
     color: #fff;
     font-size: $ms0;
-    padding: $ms-3;
   }
 
   text-align: center;
+
+  th, .rowheader, .columnheader, .total, .header{
+    color: $yellow;
+    font-size: $ms1;
+  }
+
+  &__blue {
+    th, .rowheader, .columnheader, .total, .header {
+      color: $blue;
+    }
+  }
+
+  &__long {
+    width: 100%;
+
+    th, .rowheader, .columnheader, .total, .header {
+      font-size: $ms0;
+    }
+
+    .datacell {
+      font-size: $ms-1;
+    }
+  }
 }
 
 .o_flex--col--2 table {

@@ -20,6 +20,7 @@
 .t_flex-justify-sa {
   justify-content: space-around;
 }
+
 .t_flex-justify-c {
   justify-content: center;
 }
@@ -27,6 +28,11 @@
 .t_text-align-center {
   text-align: center;
 }
+
+.t_flex-wrap {
+  flex-wrap: wrap;
+}
+
 
 .t_fixed-overlay {
   z-index: 9999;
@@ -51,4 +57,12 @@
 
 .t_bottom-margin {
   margin-bottom: $ms1;
+}
+
+.t_right-margin {
+  margin-right: $ms1;
+}
+
+.t_left-margin {
+  margin-left: $ms1;
 }

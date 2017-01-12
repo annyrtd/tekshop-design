@@ -2,14 +2,6 @@ import { inputValidation } from './login';
 import { menuButton } from './header/menu-button';
 import initRedeemSelection from './inline-survey';
 
-const menuButtonElem = document.querySelector('.c_header__menu-button');
-const panelBodyEl = document.querySelector('.c_panel-body');
-const menuEl = document.querySelector('.c_menu');
-
-const toggleShowMenu = () => {
-    menuEl.classList.toggle('c_menu--open');
-};
-
 // const responsiveIframe = () => {
 //     window.addEventListener('message', e => {
 //         const [eventName, data] = e.data;
@@ -21,8 +13,15 @@ const toggleShowMenu = () => {
 //     }, false);
 // };
 
-
 export const init = () => {
+    const menuButtonElem = document.querySelector('.c_header__menu-button');
+    const panelBodyEl = document.querySelector('.c_panel-body');
+    const menuEl = document.querySelector('.c_menu');
+
+    const toggleShowMenu = () => {
+        menuEl.classList.toggle('c_menu--open');
+    };
+
     inputValidation();
     //responsiveIframe();
     initRedeemSelection();
