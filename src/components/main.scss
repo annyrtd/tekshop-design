@@ -11,3 +11,9 @@ $padding: 5 * $base-font-size;;
     padding-top: 0;
   }
 }
+
+.c_filter--panel + .c_main {
+  .o_content {
+    min-width: 70%;
+  }
+}
