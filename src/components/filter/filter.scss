@@ -1,0 +1,97 @@
+@import "../../settings/settings";
+@import "../../generic/typography";
+
+
+.c_filter{
+  @media all and (max-width: $filterpanel) {
+    margin-right: $ms0;
+  }
+
+  &--panel {
+    display: flex;
+    flex-direction: column;
+    width: 9%;
+    position: absolute;
+    top: 10em;
+    background: rgba(64, 63, 59, 0.6);
+    color: white;
+    padding: $ms0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 100;
+    @media all and (max-width: $filterpanel) {
+      /*width: 150px;
+      left: -150px;*/
+      flex-direction: row;
+      width: auto;
+      position: initial;
+    }
+  }
+
+  &--title {
+    margin-bottom: $ms0;
+
+    @media all and (max-width: $filterpanel) {
+      font-size: $ms1 !important;
+    }
+  }
+
+  &--dropdown {
+    margin-bottom: $ms3;
+
+    @media all and (max-width: $filterpanel) {
+      margin-bottom: 0;
+    }
+
+    select {
+      width: 100%;
+      @media all and (max-width: $filterpanel) {
+        width: auto;
+      }
+    }
+  }
+
+  &--submit input {
+    width: 100%;
+  }
+
+  &--badge {
+    background: rgba(0,0,0,0.5);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    fill: white;
+    display: none;
+    cursor: pointer;
+
+    /*@media all and (max-width: $filterpanel) {
+      display: block;
+    }
+
+    @media all and (max-width: 1040px) {
+      top: -60px;
+    }*/
+  }
+}
+
+.c_active-filter-summary {
+  position: absolute;
+  padding: $ms0;
+  color: white;
+
+  @media all and (max-width: $filterpanel) {
+    top: 10em;
+  }
+
+  /*tbody{
+    display: flex;
+    tr.parameterSummary:after {
+      display: flex;
+      content: '; ';
+    }
+  }*/
+}
