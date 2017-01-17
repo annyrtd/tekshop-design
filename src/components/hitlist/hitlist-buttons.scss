@@ -1,0 +1,23 @@
+@import "../../settings/settings";
+@import "../../generic/typography";
+
+.light-grey {
+  button {
+    outline: none;
+  }
+}
+
+button.yui3-button {
+  background-image: none;
+  box-shadow: none;
+  transition: color 0.3s ease-in;
+
+  &:hover {
+    background-image: none !important;
+    color: lighten($blue, 5%) !important;
+  }
+
+  &.yui3-button-primary {
+
+  }
+}

@@ -1,0 +1,26 @@
+@import "../../settings/settings";
+@import "../../generic/typography";
+
+
+div.hitlist-container {
+  width: 100% !important;
+  font-family: inherit !important;
+  font-size: $ms-1;
+
+  * {
+    font-family: inherit !important;
+  }
+
+  .yui3-datatable-odd {
+    td {
+      background-color: rgba(0, 0, 0, .6) !important;
+    }
+  }
+}
+
+@import "hitlist";
+@import "hitlist-navigation";
+@import "hitlist-buttons";
+@import "hitlist-links";
+@import "hitlist-checkbox";
+@import "hitlist-other";

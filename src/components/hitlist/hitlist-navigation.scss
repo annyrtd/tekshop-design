@@ -1,0 +1,31 @@
+@import "../../settings/settings";
+@import "../../generic/typography";
+
+.light-grey {
+  .hitlist .yui3-datatable-header,
+  .hitlist-nav-prev,
+  .hitlist-nav-next,
+  .hitlist-nav-page {
+    color: white !important;
+  }
+
+  .hitlist-nav-prev:hover,
+  .hitlist-nav-next:hover,
+  .hitlist-nav-page:hover {
+    background-color: rgba(0,0,0,.9) !important;
+  }
+
+  .hitlist .yui3-datatable-header,
+  .hitlist-nav-prev,
+  .hitlist-nav-next,
+  .hitlist-nav-page,
+  a.hitlist-nav-prev.disabled:active,
+  a.hitlist-nav-next.disabled:active,
+  a.hitlist-nav-page.disabled:active,
+  a.hitlist-nav-prev.disabled:hover,
+  a.hitlist-nav-next.disabled:hover,
+  a.hitlist-nav-page.disabled:hover {
+    background-color: rgba(0,0,0,.6) !important;
+    background-image: none !important;
+  }
+}

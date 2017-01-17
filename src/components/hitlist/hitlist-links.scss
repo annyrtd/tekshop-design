@@ -1,0 +1,19 @@
+@import "../../settings/settings";
+@import "../../generic/typography";
+
+.light-grey a {
+  outline: none;
+  width: auto;
+  padding: 0;
+  color: darken($blue, 5%) !important;
+
+  transition: color 0.3s ease-in;
+
+  &:hover {
+    color: lighten($blue, 5%) !important;
+  }
+
+  &.hitlist-dropdown-cancel {
+    line-height: $ms3;
+  }
+}

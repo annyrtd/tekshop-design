@@ -1,0 +1,42 @@
+@import "../../settings/settings";
+@import "../../generic/typography";
+
+.yui3-widget-bd {
+  .hitlist-column {
+    width: 100%;
+
+    &-row {
+      padding: $ms-2 0 $ms-1;
+      position: relative;
+
+      input {
+        opacity: 0;
+      }
+
+      label {
+        background: url(https://survey.euro.confirmit.com/isa/BDJPFRDMEYBPBKLVADAYFQCDAVIOEQJR/Suths/flat_checkbox_default.png) 0 0px no-repeat;
+        background-size: contain;
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        padding-left: 2 * $base-font-size;
+        height: 1.75 * $base-font-size;
+        padding-top: $ms-2;
+        font-weight: 400;
+        font-size: $base-font-size;
+        color: $btn__font-color;
+
+        &:hover {
+          background: url(https://survey.euro.confirmit.com/isa/BDJPFRDMEYBPBKLVADAYFQCDAVIOEQJR/Suths/flat_checkbox_hover.png) 0 0 no-repeat;
+          background-size: contain;
+        }
+      }
+
+      input:checked + label {
+        background: url(https://survey.euro.confirmit.com/isa/BDJPFRDMEYBPBKLVADAYFQCDAVIOEQJR/Suths/flat_checkbox1.png) 0 0 no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}

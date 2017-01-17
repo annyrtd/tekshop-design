@@ -1,21 +1,14 @@
 @import "../../settings/settings";
 @import "../../generic/typography";
 
-
-div.hitlist-container {
-  width: 100% !important;
-}
-
-.hitlist-container .yui3-datatable-odd {
-  td {
-    background-color: rgba(0, 0, 0, .6) !important;
-  }
-}
-
 .light-grey .hitlist {
+
+  th.yui3-datatable-header, div.yui3-datatable-sort-liner {
+    font-size: $ms1 !important;
+  }
+
   tr th, tr td {
     color: white !important;
-    font-size: $ms1 !important;
     line-height: 40px !important;
     border-top-style: none !important;
   }
@@ -31,6 +24,7 @@ div.hitlist-container {
   }
 
   tr td {
+    font-size: $ms0 !important;
     border-bottom: 1px solid $btn__color !important;
   }
 
@@ -66,69 +60,5 @@ div.hitlist-container {
   .yui3-datatable-sort-liner:focus {
     color: #cccccc !important;
     text-shadow: none !important;
-  }
-}
-
-.light-grey {
-  .hitlist .yui3-datatable-header,
-  .hitlist-nav-prev,
-  .hitlist-nav-next,
-  .hitlist-nav-page {
-    color: white !important;
-  }
-
-  .hitlist-nav-prev:hover,
-  .hitlist-nav-next:hover,
-  .hitlist-nav-page:hover {
-    background-color: rgba(0,0,0,.9) !important;
-  }
-
-  .hitlist .yui3-datatable-header,
-  .hitlist-nav-prev,
-  .hitlist-nav-next,
-  .hitlist-nav-page,
-  a.hitlist-nav-prev.disabled:active,
-  a.hitlist-nav-next.disabled:active,
-  a.hitlist-nav-page.disabled:active,
-  a.hitlist-nav-prev.disabled:hover,
-  a.hitlist-nav-next.disabled:hover,
-  a.hitlist-nav-page.disabled:hover {
-    background-color: rgba(0,0,0,.6) !important;
-    background-image: none !important;
-  }
-}
-
-span.hitlist-pagination-count {
-  color: white;
-}
-
-.e_link {
-  width: 100%;
-
-  padding: 15px 0 5px;
-
-  & a {
-
-    text-decoration: underline;
-    color: darken($yellow, 5%);
-
-    transition: color 0.3s ease-in;
-
-    &:hover {
-
-      color: lighten($yellow, 5%);
-    }
-  }
-}
-a.e_link, .e_table td a {
-  width: auto;
-  padding: 0;
-  color: darken($yellow, 5%);
-
-  transition: color 0.3s ease-in;
-
-  &:hover {
-
-    color: lighten($yellow, 5%);
   }
 }
