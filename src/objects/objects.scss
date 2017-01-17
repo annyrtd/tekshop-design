@@ -68,6 +68,9 @@
 
   &:after {
     border-radius: 5px;
+    @media screen and (max-width: $tablet) {
+      border-radius: 0;
+    }
   }
 
   &--space-left {

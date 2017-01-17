@@ -9,6 +9,7 @@ $padding: 5 * $base-font-size;;
 
   @media screen and (max-width: $tablet) {
     padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
