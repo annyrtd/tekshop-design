@@ -23,7 +23,7 @@ export const init = () => {
     const menuButtonElem = document.querySelector('.c_header__menu-button');
     const panelBodyEl = document.querySelector('.c_panel-body');
     const menuEl = document.querySelector('.c_menu');
-    const verbatimAddingButton = document.querySelector('td.c_verbatim--content');
+    const verbatims = document.querySelectorAll('.c_verbatim');
 
     const toggleShowMenu = () => {
         menuEl.classList.toggle('c_menu--open');
@@ -39,7 +39,7 @@ export const init = () => {
             menuEl.classList.remove('c_menu--open')
     });
     menuButton.init(menuButtonElem, 'click', toggleShowMenu);
-    if (verbatimAddingButton) {
-        initVerbatim(verbatimAddingButton);
-    }
+    [].forEach.call(verbatims, verbatim => {
+        initVerbatim(verbatim);
+    });
 };

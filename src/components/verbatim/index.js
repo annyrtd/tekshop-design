@@ -1,33 +1,55 @@
-let shownRowsNumber = 0;
-const step = 30;
-let verbatimRows;
-let verbatimAddingRowsButton;
+const step = 25;
+const verbatims = [];
 
-function showFirst30() {
-    verbatimRows.forEach((row, index) => {
-        if (index >= step) {
-            row.style.display = 'none';
+class Verbatim {
+    constructor(verbatim) {
+        this.verbatimRows = verbatim.querySelectorAll('tr.c_verbatim--content');
+        this.hideRows();
+        this.shownRowsNumber = 0;
+
+        let button = verbatim.querySelector('td.c_verbatim--content');
+        if (!button) {
+            let td = document.createElement('td');
+            td.innerText = 'There are more rows';
+            let tr = document.createElement('tr');
+            tr.appendChild(td);
+            const lastRow = this.verbatimRows[this.verbatimRows.length - 1];
+            lastRow.parentNode.appendChild(tr);
+            button = td;
         }
-    });
+        this.verbatimAddingRowsButton = button;
+    }
 
-    shownRowsNumber += step;
-}
-
-function showNext30() {
-    const rowsToShow = [].filter.call(verbatimRows, (item, index) => index >= shownRowsNumber && index < shownRowsNumber + step);
-    if (rowsToShow.length > 0) {
-        rowsToShow.forEach(row => {
-            row.style.display = '';
+    hideRows() {
+        this.verbatimRows.forEach(row => {
+            row.style.display = 'none';
         });
-        shownRowsNumber += step;
-    } else {
-        verbatimAddingRowsButton.style.display = 'none';
+    }
+
+    showNext30() {
+        const rowsToShow = [].filter.call(this.verbatimRows, (item, index) => index >= this.shownRowsNumber && index < this.shownRowsNumber + step);
+
+        if (rowsToShow.length > 0) {
+            rowsToShow.forEach(row => {
+                row.style.display = '';
+            });
+            this.shownRowsNumber += step;
+        } else {
+            this.verbatimAddingRowsButton.style.display = 'none';
+        }
+    }
+
+    addEventListener() {
+        this.verbatimAddingRowsButton.addEventListener('click', () => {
+            this.showNext30();
+        });
     }
 }
 
-export const initVerbatim = (_) => {
-    verbatimAddingRowsButton = _;
-    verbatimRows = document.querySelectorAll('tr.c_verbatim--content');
-    showFirst30();
-    _.addEventListener('click', showNext30);
+
+export const initVerbatim = _ => {
+    const verbatim = new Verbatim(_);
+    verbatims.push(verbatim);
+    verbatim.addEventListener();
+    verbatim.showNext30();
 };
