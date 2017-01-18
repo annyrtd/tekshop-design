@@ -1,0 +1,38 @@
+@import "../../settings/settings";
+@import "../../generic/typography";
+
+.c_verbatim {
+  color: #fff;
+  border-radius: 5px;
+  border-collapse: collapse;
+  overflow: hidden;
+  width: 100%;
+
+  td {
+    padding: 10px;
+  }
+
+  tr:nth-child(2n - 1) {
+    background: rgba(0,0,0,0.6);
+  }
+
+  tr:nth-child(2n) {
+    background: rgba(0,0,0,0.3);
+  }
+
+  &--title {
+    font-weight: bold;
+    font-size: $ms2;
+    color: $h2__color;
+  }
+
+  tr:last-child {
+    cursor: pointer;
+    transition: color 0.3s ease-in;
+
+    &:hover {
+      color: $yellow;
+      background: rgba(0,0,0,0.8);
+    }
+  }
+}
