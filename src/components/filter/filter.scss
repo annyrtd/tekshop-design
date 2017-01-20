@@ -1,84 +1,14 @@
 @import "../../settings/settings";
 @import "../../generic/typography";
 
-
 .c_filter{
   @media all and (max-width: $filterpanel) {
     margin-right: $ms0;
   }
-
-  &--panel {
-    display: flex;
-    flex-direction: column;
-    width: 14%;
-    position: absolute;
-    top: 10em;
-    background: rgba(64, 63, 59, 0.6);
-    color: white;
-    padding: $ms0;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    z-index: 100;
-    @media all and (max-width: $filterpanel) {
-      flex-direction: row;
-      width: auto;
-      position: initial;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0;
-    }
-  }
-
-  &--title {
-    margin-bottom: $ms0;
-
-    @media all and (max-width: $filterpanel) {
-      font-size: $ms1 !important;
-    }
-  }
-
-  &--dropdown {
-    margin-bottom: $ms3;
-
-    @media all and (max-width: $filterpanel) {
-      margin-bottom: 0;
-    }
-
-    select {
-      width: 100%;
-      color: white;
-      background: rgba(0,0,0,0.5);
-      @media all and (max-width: $filterpanel) {
-        width: auto;
-      }
-    }
-  }
-
-  &--submit {
-    margin-bottom: $ms3;
-
-    @media all and (max-width: $filterpanel) {
-      margin-bottom: 0;
-      margin-right: 1em;
-      padding-top: 40px;
-    }
-
-    input {
-      width: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      color: white;
-    }
-  }
 }
 
-.c_active-filter-summary {
-  color: white;
-
-  @media all and (max-width: $filterpanel) {
-    top: 10em;
-  }
-
-  td.c_active-filter-summary {
-    padding: 10px !important;
-    border-bottom-color: white !important;
-  }
-}
+@import "filter-panel";
+@import "filter-title";
+@import "filter-dropdown";
+@import "filter-submit";
+@import "active-filter-summary";

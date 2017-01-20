@@ -1,0 +1,19 @@
+.single-view-container {
+  font-family: inherit !important;
+
+  * {
+    outline: none !important;
+    font-family: inherit !important;
+  }
+
+  .sv-action-bar, .sv-footer, .sv-handle {
+    background: #ededed !important;
+    box-shadow: none !important;
+    border: 0 solid transparent !important;
+  }
+
+  button.yui3-button {
+    background-color: #dddddd !important;
+  }
+}
+

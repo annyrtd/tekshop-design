@@ -17,7 +17,24 @@ button.yui3-button {
     color: lighten($blue, 5%) !important;
   }
 
-  &.yui3-button-primary {
-
+  &:active {
+    box-shadow: none !important;
+    background-image: none !important;
   }
+
+  &.hitlist-dropdown-clear {
+    background-color: rgba(0,0,0,0.25) !important;
+  }
+}
+
+button.sv-close, button.sv-print-button {
+  background-color: transparent;
+}
+
+button.yui3-button[disabled], button.yui3-button[disabled]:hover, button.yui3-button[disabled]:active,
+button.yui3-button-disabled, button.yui3-button-disabled:hover, button.yui3-button-disabled:active {
+  cursor: default !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  color: rgba(0,0,0,0.80) !important;
 }

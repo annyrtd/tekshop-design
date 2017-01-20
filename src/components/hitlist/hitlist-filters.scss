@@ -1,0 +1,68 @@
+@import "../../settings/settings";
+@import "../../generic/typography";
+
+div.hitlist-filter-item:not(#item_responseid) {
+  position: relative;
+
+  &:after {
+    position: relative;
+    content: '';
+    left: -14px;
+    top: 13px;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 6px solid #000;
+    pointer-events: none;
+  }
+
+  input.ac {
+    height: 23px;
+    width: 100%;
+  }
+
+  img.aci {
+    opacity: 0;
+    position: absolute;
+    top: 22px;
+    width: 100%;
+    left: 0;
+  }
+}
+
+
+.light-grey {
+  .hitlist-filter {
+    font-size: inherit !important;
+    border: 1px solid $blue !important;
+    padding: 0 $ms0 !important;
+    line-height: 40px;
+    background: lighten($blue, 50%);
+
+    &-item input {
+      padding: 6px !important;
+      height: 23px !important;
+    }
+
+    &-remove {
+      top: -1px !important;
+      height: 40px !important;
+    }
+
+    &-name {
+      max-width: initial !important;
+    }
+  }
+  .hitlist-toggle-field input {
+    top: 0 !important;
+  }
+
+  .hitlist-dropdown-button, .hitlist-btn, .hitlist-dropdown-panel, .hitlist-column-panel {
+    background: #ededed none !important;
+  }
+
+  .hitlist-dropdown-button:hover, .hitlist-btn:hover {
+    background: #e7e7e7 !important;
+  }
+}

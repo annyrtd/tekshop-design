@@ -1,0 +1,23 @@
+@import "../../settings/settings";
+@import "../../generic/typography";
+
+.c_filter--panel {
+  display: flex;
+  flex-direction: column;
+  width: 14%;
+  position: absolute;
+  top: 10em;
+  background: rgba(64, 63, 59, 0.6);
+  color: white;
+  padding: $ms0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 100;
+  @media all and (max-width: $filterpanel) {
+    flex-direction: row;
+    width: auto;
+    position: initial;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}

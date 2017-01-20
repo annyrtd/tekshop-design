@@ -1,0 +1,15 @@
+@import "../../settings/settings";
+@import "../../generic/typography";
+
+.c_active-filter-summary {
+  color: white;
+
+  @media all and (max-width: $filterpanel) {
+    top: 10em;
+  }
+
+  td.c_active-filter-summary {
+    padding: 10px !important;
+    border-bottom-color: white !important;
+  }
+}

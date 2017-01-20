@@ -1,0 +1,19 @@
+@import "../../settings/settings";
+@import "../../generic/typography";
+
+.c_filter--dropdown {
+  margin-bottom: $ms3;
+
+  @media all and (max-width: $filterpanel) {
+    margin-bottom: 0;
+  }
+
+  select {
+    width: 100%;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    @media all and (max-width: $filterpanel) {
+      width: auto;
+    }
+  }
+}

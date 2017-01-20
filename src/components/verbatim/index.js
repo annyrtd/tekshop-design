@@ -46,7 +46,6 @@ class Verbatim {
     }
 }
 
-
 export const initVerbatim = _ => {
     const verbatim = new Verbatim(_);
     verbatims.push(verbatim);

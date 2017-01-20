@@ -1,0 +1,10 @@
+@import "../../settings/settings";
+@import "../../generic/typography";
+
+.c_filter--title {
+  margin-bottom: $ms0;
+
+  @media all and (max-width: $filterpanel) {
+    font-size: $ms1 !important;
+  }
+}

@@ -1,0 +1,18 @@
+@import "../../settings/settings";
+@import "../../generic/typography";
+
+.c_filter--submit {
+  margin-bottom: $ms3;
+
+  @media all and (max-width: $filterpanel) {
+    margin-bottom: 0;
+    margin-right: 1em;
+    padding-top: 40px;
+  }
+
+  input {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+  }
+}

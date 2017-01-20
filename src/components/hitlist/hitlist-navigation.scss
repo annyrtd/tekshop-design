@@ -28,4 +28,11 @@
     background-color: rgba(0,0,0,.6) !important;
     background-image: none !important;
   }
+
+  .hitlist-nav-button {
+    padding: $ms-2 !important;
+    width: 90px !important;
+    line-height: initial !important;
+    height: initial !important;
+  }
 }

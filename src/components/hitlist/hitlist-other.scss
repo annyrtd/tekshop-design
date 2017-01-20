@@ -17,4 +17,9 @@ span.hitlist-pagination-count {
     font-size: $ms0 !important;
     color: initial !important;
   }
+
+  tr.hitlist-selected-row td.yui3-datatable-cell {
+    background: $blue !important;
+    border-top: 0 solid $blue !important;
+  }
 }
