@@ -1,4 +1,4 @@
-const step = 25;
+const step = 24;
 const verbatims = [];
 
 class Verbatim {
@@ -11,6 +11,7 @@ class Verbatim {
         if (!button) {
             let td = document.createElement('td');
             td.innerText = 'There are more rows';
+            td.setAttribute('class', 'c_verbatim--content');
             let tr = document.createElement('tr');
             tr.appendChild(td);
             const lastRow = this.verbatimRows[this.verbatimRows.length - 1];
@@ -26,7 +27,7 @@ class Verbatim {
         });
     }
 
-    showNext30() {
+    showNextRows() {
         const rowsToShow = [].filter.call(this.verbatimRows, (item, index) => index >= this.shownRowsNumber && index < this.shownRowsNumber + step);
 
         if (rowsToShow.length > 0) {
@@ -41,7 +42,7 @@ class Verbatim {
 
     addEventListener() {
         this.verbatimAddingRowsButton.addEventListener('click', () => {
-            this.showNext30();
+            this.showNextRows();
         });
     }
 }
@@ -50,5 +51,5 @@ export const initVerbatim = _ => {
     const verbatim = new Verbatim(_);
     verbatims.push(verbatim);
     verbatim.addEventListener();
-    verbatim.showNext30();
+    verbatim.showNextRows();
 };

@@ -29,10 +29,17 @@
   tr:last-child {
     cursor: pointer;
     transition: color 0.3s ease-in;
+    font-size: $ms1;
+    font-weight: bold;
+    background: rgba(0,0,0,.3);
 
     &:hover {
       color: $yellow;
       background: rgba(0,0,0,0.8);
+    }
+
+    td.c_verbatim--content:after {
+      content: '...';
     }
   }
 }
